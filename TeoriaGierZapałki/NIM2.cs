@@ -9,11 +9,18 @@ using System.Windows.Forms;
 
 namespace TeoriaGierZapałki
 {
-    public partial class Form1 : Form
+    public partial class NIM2 : Form
     {
-        public Form1()
+        public NIM2()
         {
             InitializeComponent();
+        }
+
+        private void button_back2_Click(object sender, EventArgs e)
+        {
+            var menu = new MainWindow();
+            menu.Show();
+            this.Hide();
         }
     }
 }

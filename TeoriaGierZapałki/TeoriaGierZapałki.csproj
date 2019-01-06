@@ -43,14 +43,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="NIM1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="NIM1.Designer.cs">
+      <DependentUpon>NIM1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NIM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NIM2.Designer.cs">
+      <DependentUpon>NIM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NIM3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NIM3.Designer.cs">
+      <DependentUpon>NIM3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NIM1.resx">
+      <DependentUpon>NIM1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NIM2.resx">
+      <DependentUpon>NIM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NIM3.resx">
+      <DependentUpon>NIM3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
