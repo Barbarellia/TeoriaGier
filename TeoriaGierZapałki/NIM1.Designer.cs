@@ -42,6 +42,7 @@
             this.button_back1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_max = new System.Windows.Forms.Label();
+            this.label_number = new System.Windows.Forms.Label();
             this.groupBox_settings1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_maximum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_numberOfMatches)).BeginInit();
@@ -150,6 +151,7 @@
             this.button_go.TabIndex = 5;
             this.button_go.Text = "Go!";
             this.button_go.UseVisualStyleBackColor = true;
+            this.button_go.Click += new System.EventHandler(this.button_go_Click);
             // 
             // button_back1
             // 
@@ -172,10 +174,20 @@
             // label_max
             // 
             this.label_max.AutoSize = true;
-            this.label_max.Location = new System.Drawing.Point(628, 216);
+            this.label_max.Location = new System.Drawing.Point(734, 216);
             this.label_max.Name = "label_max";
-            this.label_max.Size = new System.Drawing.Size(0, 13);
+            this.label_max.Size = new System.Drawing.Size(13, 13);
             this.label_max.TabIndex = 8;
+            this.label_max.Text = "0";
+            // 
+            // label_number
+            // 
+            this.label_number.AutoSize = true;
+            this.label_number.Location = new System.Drawing.Point(658, 216);
+            this.label_number.Name = "label_number";
+            this.label_number.Size = new System.Drawing.Size(13, 13);
+            this.label_number.TabIndex = 9;
+            this.label_number.Text = "0";
             // 
             // NIM1
             // 
@@ -184,6 +196,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(828, 531);
+            this.Controls.Add(this.label_number);
             this.Controls.Add(this.label_max);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button_back1);
@@ -221,5 +234,6 @@
         private System.Windows.Forms.Button button_back1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_max;
+        private System.Windows.Forms.Label label_number;
     }
 }
