@@ -43,6 +43,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_max = new System.Windows.Forms.Label();
             this.label_number = new System.Windows.Forms.Label();
+            this.label_action = new System.Windows.Forms.Label();
             this.groupBox_settings1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_maximum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_numberOfMatches)).BeginInit();
@@ -189,6 +190,15 @@
             this.label_number.TabIndex = 9;
             this.label_number.Text = "0";
             // 
+            // label_action
+            // 
+            this.label_action.AutoSize = true;
+            this.label_action.Location = new System.Drawing.Point(627, 386);
+            this.label_action.Name = "label_action";
+            this.label_action.Size = new System.Drawing.Size(87, 13);
+            this.label_action.TabIndex = 10;
+            this.label_action.Text = "Info about action";
+            // 
             // NIM1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,6 +206,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(828, 531);
+            this.Controls.Add(this.label_action);
             this.Controls.Add(this.label_number);
             this.Controls.Add(this.label_max);
             this.Controls.Add(this.pictureBox1);
@@ -235,5 +246,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_max;
         private System.Windows.Forms.Label label_number;
+        private System.Windows.Forms.Label label_action;
     }
 }

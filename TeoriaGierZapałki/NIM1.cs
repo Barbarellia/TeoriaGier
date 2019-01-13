@@ -12,6 +12,8 @@ namespace TeoriaGierZapałki
 {
     public partial class NIM1 : Form
     {
+        public int Sum = 0;
+
         public NIM1()
         {
             InitializeComponent();
@@ -65,18 +67,18 @@ namespace TeoriaGierZapałki
         {
             int maximum = Convert.ToInt32(label_max.Text);
             int matchesToRemove = Convert.ToInt32(numericUpDown_choice.Value);
-            int sum = 0;
+            int matches = Convert.ToInt32(label_number.Text);
 
-            if (matchesToRemove <= maximum)
+            if ((matches - Sum) >= matchesToRemove)
             {
-                
-                sum += matchesToRemove;
-                if (pictureBox1.Controls.Count != 0)
-                    pictureBox1.Controls.Clear();
-                int matches = Convert.ToInt32(label_number.Text);
-                int n = matches - sum;
-                FillPicturebox(n);
-                
+                if (matchesToRemove <= maximum)
+                {
+                    Sum += matchesToRemove;
+                    if (pictureBox1.Controls.Count != 0)
+                        pictureBox1.Controls.Clear();
+                    FillPicturebox(matches - Sum);
+                    label_action.Text = "You take " + matchesToRemove.ToString() +" matches";
+                }
             }
 
         }
