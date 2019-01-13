@@ -25,21 +25,18 @@ namespace TeoriaGierZapałki
             PictureBox[] picturebox = new PictureBox[list.Length];
             int y = 0;
 
-            for (int index = 0; index < picturebox.Length; index++)
+            int index = 1;
+            for (int match = 0; match < matchesNumber; match++)
             {
-                for (int match = 0; match < matchesNumber; match++)
-                {
-                    picturebox[index] = new PictureBox();
-                    int fittedWidth = pictureBox1.Width / matchesNumber;
+                picturebox[index] = new PictureBox();
+                int fittedWidth = pictureBox1.Width / matchesNumber;
 
-                    picturebox[index].Size = new Size(101, fittedWidth);
-                    pictureBox1.Controls.Add(picturebox[index]);
-                    picturebox[index].Location = new Point(match * fittedWidth + 2, y);
-                    picturebox[index].Size = new Size(fittedWidth, 101);
-                    picturebox[index].Image = Image.FromFile(list[index]);
-                }
+                picturebox[index].Size = new Size(101, fittedWidth);
+                pictureBox1.Controls.Add(picturebox[index]);
+                picturebox[index].Location = new Point(match * fittedWidth + 2, y);
+                picturebox[index].Size = new Size(fittedWidth, 101);
+                picturebox[index].Image = Image.FromFile(list[index]);
             }
-
         }
 
         private void button_back1_Click(object sender, EventArgs e)
